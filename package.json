@@ -49,7 +49,7 @@
   "scripts": {
     "test": "mocha test/",
     "bulk-mac": "./bin/runsauce.js -c prod -t delay504 -b safari -v 10.1 -p 'macOS 10.12' -e '{\"idleTimeout\":\"300000\"}' -r 20 -n 10",
-    "bulk-win10": "./bin/runsauce.js -c prod -t delay504 -b chrome -v 10 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 20 -n 10"
+    "bulk-win10": "./bin/runsauce.js -c prod -t delay504 -b chrome -v latest -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 100"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
