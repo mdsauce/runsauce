@@ -50,9 +50,19 @@
     "test": "mocha test/",
     "bulk-mac": "./bin/runsauce.js -c prod -t delay504 -b safari -v 10.1 -p 'macOS 10.12' -e '{\"idleTimeout\":\"300000\"}' -r 20 -n 10",
     "bulk-win10": "./bin/runsauce.js -c prod -t delay504 -b chrome -v latest -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 600 -n 60",
-    "bulk-win10-edge15": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 15.15063 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 600 -n 60",
-    "bulk-win10-edge16": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 16.16299 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 600 -n 60",
-    "bulk-win10-ie11": "./bin/runsauce.js -c prod -t delay504 -b 'internet explorer' -v 11.103 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 600 -n 60"
+    
+    "bulk-win10-edge14": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 14.14393 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "bulk-win10-edge15": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 15.15063 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "bulk-win10-edge16": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 16.16299 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "bulk-win10-edge17": "./bin/runsauce.js -c prod -t delay504 -b MicrosoftEdge -v 17.17134 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "bulk-win10-ie11": "./bin/runsauce.js -c prod -t delay504 -b 'internet explorer' -v 11.103 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+
+    "chef-win10-edge17": "./bin/runsauce.js -c prod -t chefTest -b MicrosoftEdge -v 17.17134 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "chef-win10-edge16": "./bin/runsauce.js -c prod -t chefTest -b MicrosoftEdge -v 16.16299 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "chef-win10-edge15": "./bin/runsauce.js -c prod -t chefTest -b MicrosoftEdge -v 15.15063 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+    "chef-win10-edge14": "./bin/runsauce.js -c prod -t chefTest -b MicrosoftEdge -v 14.14393 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20",
+
+    "bulk-win10-chrome60": "./bin/runsauce.js -c prod -t delay504 -b chrome -v 60 -p 'Windows 10' -e '{\"idleTimeout\":\"300000\"}' -r 300 -n 20"
 
   },
   "devDependencies": {
